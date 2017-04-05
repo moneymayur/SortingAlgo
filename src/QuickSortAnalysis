@@ -1,3 +1,4 @@
 Divide and Conquer
 O(nlogn)  -> Best and Average
 Partition Takes O(n)
+Best Case -> Partition will be balanced 
