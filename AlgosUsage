@@ -9,3 +9,9 @@ Used only when:
 2. Optimal solution contains optimal solution to the sub problems
 
 Greedy never reconsiders its options
+
+Divide & Conquer
+1. Divide: Break the given problem into subproblems of same type.
+2. Conquer: Recursively solve these subproblems
+3. Combine: Appropriately combine the answers
+ ->Divide and Conquer should be used when same subproblems are not evaluated many times.
