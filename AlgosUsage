@@ -7,3 +7,5 @@ At every step, we can make a choice that looks best at the moment, and we get th
 Used only when:
 1. global optimum can be arrived at by selecting the local optimum
 2. Optimal solution contains optimal solution to the sub problems
+
+Greedy never reconsiders its options
