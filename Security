@@ -1,0 +1,9 @@
+Slow HTTP can knock down a server:
+Slow HTTP attacks are primarily of three types.
+
+Slow headers (a.k.a Slowloris)
+This attack works by opening a large number of connections with the web server and keeping them alive by slowing sending never ending headers. The server won’t close the connections as the request is not complete and it will eventually exhaust all the resources on the server, blocking the legitimate requests.
+Slow body (a.k.a R-U-Dead-Yet)
+R-U-Dead-Yet works just like Slowloris, but instead of sending never ending headers, it sends never ending POST body, forcing the server to keep the connections open. When all the resources of the server are occupied, it is unable to serve the legitimate requests.
+Slow read
+The above-mentioned attacks exploit a web server by sending slow requests, however, slow read exploit is based on reading responses from a server very slowly. It works by advertising a very low client receive buffer size, triggering a big response from the server, and taking up to minutes to read a single response. When multiple such connections are created concurrently, it can consume all the server resources and lead to DoS.
